@@ -12,4 +12,3 @@ extends Entity
 
 #func on_destroy() -> void:
 #pass
-

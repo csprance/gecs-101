@@ -1,10 +1,10 @@
 [gd_scene load_steps=6 format=3 uid="uid://x5ubiio43y7w"]
 
-[ext_resource type="Script" uid="uid://dll3up0io2u1q" path="res://main.gd" id="1_0xm2m"]
+[ext_resource type="Script" uid="uid://dll3up0io2u1q" path="res://game/main.gd" id="1_0xm2m"]
 [ext_resource type="Script" uid="uid://cdu5tlyk72uu4" path="res://addons/gecs/world.gd" id="1_ig7tw"]
-[ext_resource type="PackedScene" uid="uid://fq5k2dkey18x" path="res://entities/dude.tscn" id="3_h2yge"]
-[ext_resource type="Script" uid="uid://b5xyu2a1nsicl" path="res://systems/s_velocity.gd" id="4_lquwl"]
-[ext_resource type="Script" uid="uid://cd4ytjyobctm1" path="res://systems/s_random_velocity.gd" id="5_7mycd"]
+[ext_resource type="PackedScene" uid="uid://fq5k2dkey18x" path="res://game/entities/dude.tscn" id="3_h2yge"]
+[ext_resource type="Script" uid="uid://b5xyu2a1nsicl" path="res://game/systems/s_velocity.gd" id="4_lquwl"]
+[ext_resource type="Script" uid="uid://cdrpa6e2xp34y" path="res://game/systems/s_timers.gd" id="5_5un7r"]
 
 [node name="Main" type="Node3D"]
 script = ExtResource("1_0xm2m")
@@ -38,9 +38,8 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.02928, 0, 3.01226)
 script = ExtResource("4_lquwl")
 group = "physics"
 
-[node name="SRandomVelocity" type="Node" parent="World/Systems"]
-script = ExtResource("5_7mycd")
-time_between_updates = 1.0
+[node name="STimers" type="Node" parent="World/Systems"]
+script = ExtResource("5_5un7r")
 group = "gameplay"
 
 [node name="Camera3D" type="Camera3D" parent="."]
