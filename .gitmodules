@@ -1,0 +1,4 @@
+[submodule "addons/gecs"]
+	path = addons/gecs
+	url = https://github.com/csprance/gecs
+	branch = release-v3.10.0
