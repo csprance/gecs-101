@@ -1,6 +1,6 @@
 # GECS-101
 
-> **A simple example of using GECS by creating random movers**
+> **A simple example of using [GECS](https://github.com/csprance/GECS) by creating random movers**
 
 
 ## 🌟 Community
