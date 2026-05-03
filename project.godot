@@ -12,12 +12,12 @@ config_version=5
 
 config/name="gecs-101"
 run/main_scene="uid://x5ubiio43y7w"
-config/features=PackedStringArray("4.5", "Forward Plus")
+config/features=PackedStringArray("4.6", "Forward Plus")
 config/icon="res://icon.svg"
 
 [autoload]
 
-ECS="*res://addons/gecs/ecs.gd"
+ECS="*uid://dfqwl5njvdnmq"
 
 [editor_plugins]
 
